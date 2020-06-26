@@ -7,15 +7,34 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+My project will be an NBA info page. You will be able to Tap on a team and find their information.
+You will also be able to do the same for a player which will display a bit of information about the player.
 
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+https://www.balldontlie.io/api/v1/players/
+
 
 
 ```
-{data: {} }
+{data: {{
+"id": 237,
+"first_name": "LeBron",
+"height_feet": 6,
+"height_inches": 8,
+"last_name": "James",
+"position": "F",
+"team": {
+"id": 14,
+"abbreviation": "LAL",
+"city": "Los Angeles",
+"conference": "West",
+"division": "Pacific",
+"full_name": "Los Angeles Lakers",
+"name": "Lakers"
+},
+"weight_pounds": 250
+}} }
 ```
 
 
@@ -23,18 +42,19 @@ Use this section to include info about the API you have chosen and a code snippe
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [add link to your wireframes](https://www.figma.com/file/z9tyc9XTJXGGIBbI787nte/Untitled?node-id=40%3A12)
+- [add link to your react architecture](https://www.figma.com/file/q3dfFMsRx5wq8gVjxL2kD1/Untitled?node-id=4%3A2)
 
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+After completion, user will be able to find player and team information. There will be a page for Team listing and the user will be able to tap on the team and see information displayed on page. This will be the same for the player page.  
 
 #### MVP EXAMPLE
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
+- Display information by specific choice of player or team.
 
 #### PostMVP EXAMPLE
 
