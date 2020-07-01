@@ -1,23 +1,28 @@
 import React from 'react';
 import './App.css';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
 
 export default function Nav() {
+
+    const navColor = {
+        color: 'white'
+    };
+
     return (
         <nav>
             <h3>My NBAI</h3>
             <ul className="nav-links">
-                <Link to="/" > 
+                <Link style={navColor} to="/" > 
                     <li>Home</li>
                 </Link>
-                <Link to='teamPage'>
+                <Link style={navColor} to='teamPage'>
                     <li>TeamPage</li>
                 </Link>
-                <Link to='playerPage'>
+                <Link style={navColor} to='playerPage'>
                 <li>PlayerPage</li>
                 </Link>
-                <Link to='about'>
+                <Link style={navColor} to='about'>
                 <li>About</li>
                 </Link>
             </ul>
