@@ -18,7 +18,7 @@ nav {
 }
 
 .team-name {
-  padding-left: 10px;
+  text-align: center;
 }
 
 h1  {
@@ -31,8 +31,52 @@ img {
 }
 
 h2 {
-  width: 40%;
-  color: lightgrey;
+  width: 100%;
+  color: black;
   font-size: 10px;
   background-color: whitesmoke;
+  text-align: center;
 }
+
+h3 {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  border-color: black;
+  background-color: grey;
+  color: white;
+}
+
+p{
+  text-align: center;
+}
+
+h4 {
+  color: black;
+  text-decoration: underline;
+}
+
+span {
+  color: red;
+}
+
+.img2 {
+  border: 2px solid black;
+}
+
+.about-list {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.about-list li {
+  padding-top: 20px;
+  list-style: square;
+}
+
+.team-info-page {
+  text-align: center;
+}
+
+
+

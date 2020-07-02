@@ -30,7 +30,7 @@ export default function TeamPage() {
             <img src="https://www.basketballnetwork.net/app/uploads/2018/02/nba-teams.jpg" alt="NBA Team Logos"></img>
             {teams.map(team => (
                 <h2 key={team.id} className='team-name'>
-                <Link to={`./teamPage/${team.id}`}>{team.full_name}</Link>
+                <Link exact to={`./teamPage/${team.id}`}>{team.full_name}</Link>
                 </h2>
             ))}
         </div>

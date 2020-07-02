@@ -11,7 +11,7 @@ export default function Nav() {
 
     return (
         <nav>
-            <h3>My NBAI</h3>
+            <h4>My <span>NBAI</span></h4>
             <ul className="nav-links">
                 <Link style={navColor} to="/" > 
                     <li>Home</li>

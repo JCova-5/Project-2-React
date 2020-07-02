@@ -20,7 +20,7 @@ export default function PlayerPage() {
             const players = await data.json();
             console.log(players.data)
             setPlayers(players.data);
-        }
+        };
     
     
     

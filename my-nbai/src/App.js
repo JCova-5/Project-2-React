@@ -5,6 +5,7 @@ import TeamPage from './TeamPage';
 import PlayerPage from './PlayerPage';
 import About from './About';
 import TeamInfo from './TeamInfo'
+import Home from './Home'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
       <div className="App">
         <Nav />
           <Switch>
+            {/* <Home /> */}
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/teampage' exact component={TeamPage} />
-            <Route exact path='/teampage/:id' component={TeamInfo} />
+            <Route exact path='/teampage/:id' render={(routerProps) => <TeamInfo {...routerProps} />} />
             <Route path='/playerPage' component={PlayerPage} />
             
          </Switch>
@@ -26,12 +28,8 @@ function App() {
      
     
   );
-}
+};
 
-const Home = () => (
-  <div>
-    <h1>My NBA-I</h1>
-  </div>
-);
+
 
 export default App;

@@ -10,7 +10,7 @@ export default function About() {
                 to do the same for players and it will display height weight position etc..
             </p>
             <h2>Covid-19 Updates</h2>
-            <ul>
+            <ul className='about-list'>
                 <li>Stats will not be posted until NBA season returns.</li>
                 <li>The NBA is scheduled to return July 30th. </li>
                 <li>With recent Covid outbreaks the NBA may not return to finish 19-20 season.</li>
