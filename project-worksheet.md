@@ -16,7 +16,7 @@ https://www.balldontlie.io/api/v1/players/
 
 
 
-
+{
 {data: {{
 "id": 237,
 "first_name": "LeBron",
@@ -35,7 +35,7 @@ https://www.balldontlie.io/api/v1/players/
 },
 "weight_pounds": 250
 }} }
-
+}
 
 
 ## Wireframes
