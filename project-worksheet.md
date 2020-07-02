@@ -13,6 +13,7 @@ You will also be able to do the same for a player which will display a bit of in
 ## API
 
 https://www.balldontlie.io/api/v1/players/
+https://www.balldontlie.io/api/v1/teams
 
 
 
