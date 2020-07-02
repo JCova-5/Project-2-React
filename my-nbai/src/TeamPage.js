@@ -13,9 +13,9 @@ export default function TeamPage() {
 
 
     const TeamPageInfo = async () => {
-        const data = await fetch ('https://www.balldontlie.io/api/v1/teams')
+        const data = await fetch ('https://www.balldontlie.io/api/v1/teams');
         const teams = await data.json();
-        console.log(teams.data)
+        // console.log(teams.data);
         setTeams(teams.data);
     }
 

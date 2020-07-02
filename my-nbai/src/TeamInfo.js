@@ -3,7 +3,7 @@ import './App.css';
 import {Link} from 'react-router-dom';
 
 export default function TeamInfo(props) {
-    console.log(props)
+    // console.log(props)
     useEffect(() => {
         TeamPageInfo();
     }, [props]);
@@ -14,9 +14,9 @@ export default function TeamInfo(props) {
     const TeamPageInfo = async () => {
         const data = await fetch (`https://www.balldontlie.io/api/v1/teams/${props.match.params.id}`)
         const teams = await data.json();
-        console.log(teams);
+        // console.log(teams);
         setTeams(teams);
-    }
+    };
 
 
 

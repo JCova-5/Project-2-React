@@ -16,9 +16,9 @@ export default function PlayerPage() {
     
     
         const PlayerPageInfo = async () => {
-            const data = await fetch ('https://www.balldontlie.io/api/v1/players/')
+            const data = await fetch ('https://www.balldontlie.io/api/v1/players/');
             const players = await data.json();
-            console.log(players.data)
+            // console.log(players.data)
             setPlayers(players.data);
         };
     
@@ -33,7 +33,7 @@ export default function PlayerPage() {
                 <img src="https://www.basketballnetwork.net/app/uploads/2018/02/nba-teams.jpg" alt="NBA Team Logos"></img>
                 {players.map(player => (
                     <h2 key={player.id} className='player-name'>
-                    <Link to={`./playerPage/${player.id}`}>{player.first_name}</Link>
+                    <Link exact to={`./playerPage/${player.id}`}>{player.first_name} {player.last_name}</Link>
                     </h2>
                 ))}
             </div>
